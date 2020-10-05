@@ -1,0 +1,10 @@
+{{ "counter " + counter | uppercase }}
+<hr />
+<app-counter (onCount)="count($event)"></app-counter>
+<hr />
+<h1 [style.color]="color">
+  My Title wake up!
+</h1>
+<app-myinput (change)="updateColor($event)"></app-myinput>
+<hr />
+<app-myform></app-myform>

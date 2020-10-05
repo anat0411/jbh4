@@ -1,0 +1,16 @@
+<h1>Hello my name is {{ name }}</h1>
+<h2>My age is 21 {{ age }}</h2>
+<input [placeholder]="x" />
+<h1 [style.color]="colorA" [style]="{ color: color, fontSize: '20px' }">
+  Hello world
+</h1>
+<h2 [class.red]="isRed">Yes We Can</h2>
+<h2 [class]="1 > 0 ? 'red' : 'green'">
+  We can
+</h2>
+
+<button (click)="handleClick($event)">Click me</button>
+{{ isClicked ? "true" : "false" }}
+
+<h1>Counter {{ inc }}</h1>
+<button (click)="handleClickSecond($event)">inc</button>

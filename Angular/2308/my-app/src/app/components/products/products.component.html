@@ -1,0 +1,6 @@
+<h2>Products list</h2>
+<ul>
+  <button *ngFor="let product of products" (click)="addToCart(product._id)">
+    {{ product.name }} {{ product.price }}
+  </button>
+</ul>

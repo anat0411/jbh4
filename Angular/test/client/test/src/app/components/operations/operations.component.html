@@ -1,0 +1,8 @@
+<h1>Operations List</h1>
+<input name="inputValue" (input)="onUpdateInputValue($event)" />
+<button (click)="updateOperations(inputValue)">Submit</button>
+
+<div *ngFor="let operation of operations">
+  {{ operation.operationType }}, {{ operation.amount }}, {{ operation.date }},
+  {{ operation.payments }},{{ operation.interest }}
+</div>

@@ -1,0 +1,9 @@
+<h1>My Store</h1>
+<div class="container">
+  <div class="side cart">
+    <app-cart [updated]="updated"></app-cart>
+  </div>
+  <div class="side">
+    <app-products (onAddToCart)="addToCart()"></app-products>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<app-clock *ngIf="hide"></app-clock>
+<button (click)="hide = !hide">Toggle Clock</button>
+<!-- <input type="text" [(ngModel)]="msg"/>
+<div *ngIf="msg.indexOf('#') > -1">
+    Error! no #
+</div> -->
+<!-- <app-list [search]="msg"></app-list> -->
+
+<div
+  [ngClass]="{ x: hide }"
+  [ngStyle]="{ 'font-size': '50px', color: hide ? 'red' : 'yellow' }"
+>
+  Hello
+</div>
